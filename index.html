@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li onclick="loadContent('home')">Home</li>
+        <li onclick="loadContent('stats')">Statistics</li>
+        <li onclick="loadContent('users')">Users</li>
+        <li onclick="loadContent('settings')">Settings</li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1 id="page-title">Home</h1>
+      </header>
+      <section id="content">
+        <p>Welcome to the dashboard!</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
